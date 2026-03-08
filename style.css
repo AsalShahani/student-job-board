@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  padding: 40px;
+  line-height:1.5;
+}
+
+/* container */
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* header */
+
+.header{
+  text-align:center;
+  margin:40px;
+  margin-bottom:50px;
+}
+
+/* filters */
+
+.filters{
+  display:flex;
+  gap:12px;
+  margin-top:30px;
+  flex-wrap:wrap;
+}
+
+.filters input,
+.filters select{
+  padding:8px 12px;
+  border-radius:6px;
+  border:1px solid #ddd;
+  font-size:14px;
+}
+
+/* job grid */
+
+.jobs{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+/* job card */
+
+.job-card{
+  background:white;
+  padding:18px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+  transition:all 0.25s ease;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  border-left:4px solid #6c63ff;
+}
+
+.job-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 30px rgba(0,0,0,0.12);
+}
+
+.job-card h3{
+  font-size:18px;
+  margin-bottom:6px;
+}
+
+.job-card p{
+  margin:4px 0;
+  color:#555;
+}
+
+/* job actions */
+
+.job-actions{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:10px;
+}
+
+/* save button */
+
+.save-btn{
+  background:none;
+  border:none;
+  cursor:pointer;
+  font-size:18px;
+}
+
+.save-btn i{
+  font-size:18px;
+  color:#888;
+}
+
+.save-btn i.fa-solid{
+  color:#e63946;
+}
+
+/* apply button */
+
+.apply-btn{
+  background:#4f46e5;
+  color:white;
+  border:none;
+  padding:8px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:14px;
+  font-weight:500;
+}
+
+.apply-btn:hover{
+  background:#4338ca;
+}
+
+.applied{
+  background:#16a34a;
+  color:white;
+  cursor:default;
+}
+
+/* modal */
+
+.modal{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+}
+
+.modal-content{
+  background:white;
+  padding:30px;
+  width:400px;
+  margin:100px auto;
+  border-radius:8px;
+}
+
+.close{
+  float:right;
+  font-size:24px;
+  cursor:pointer;
+}
+
+/* empty state */
+
+.empty-state{
+  text-align:center;
+  padding:40px;
+  color:#888;
+  font-size:15px;
+}
+
+/* favorites */
+
+.favorites{
+  margin-top:50px;
+}
+
+.favorite-card{
+  background:white;
+  padding:14px;
+  border-radius:8px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.05);
+  margin-bottom:10px;
+}
+
+/* remove button */
+
+.remove-btn{
+  cursor:pointer;
+  padding:5px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Job Board</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Student Job Board</h1>
+    <p>Find internships and working student jobs</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Filters -->
+    <section class="filters">
+
+      <input type="text" id="searchInput" placeholder="Search jobs..."/>
+
+      <select id="typeFilter">
+        <option value="">All Types</option>
+        <option value="Internship">Internship</option>
+        <option value="Part-time">Part-time</option>
+        <option value="Working Student">Working Student</option>
+      </select>
+
+      <select id="locationFilter">
+        <option value="">All Locations</option>
+        <option value="Berlin">Berlin</option>
+        <option value="Munich">Munich</option>
+        <option value="Hamburg">Hamburg</option>
+        <option value="Frankfurt">Frankfurt</option>
+        <option value="Remote">Remote</option>
+      </select>
+    </section>
+
+    <!-- Job List -->
+    <section id="jobList" class="jobs">
+    <!-- JS renders jobs here -->
+
+    </section>
+    
+    <section class="favorites">
+
+    <h2>Saved Jobs</h2>
+
+    <div id="favoritesList"></div>
+
+    </section>
+
+  </main>
+  <!-- Job Modal -->
+  <div id="jobModal" class="modal">
+
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+
+    <h2 id="modalTitle"></h2>
+    <p id="modalCompany"></p>
+    <p id="modalLocation"></p>
+    <p id="modalType"></p>
+    <p id="modalDescription"></p>
+
+  </div>
+</div>
+<!-- Apply Modal -->
+<div id="applyModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Apply for this Job</h2>
+
+    <form id="applyForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Why should we hire you?" required></textarea>
+      <button type="submit">Submit Application</button>
+    </form>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
