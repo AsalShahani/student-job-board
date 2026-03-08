@@ -23,10 +23,11 @@ body {
 /* filters */
 
 .filters{
-  display:flex;
-  gap:12px;
-  margin-top:30px;
-  flex-wrap:wrap;
+display:flex;
+gap:12px;
+margin-top:30px;
+flex-wrap:wrap;
+justify-content:center;
 }
 
 .filters input,
@@ -138,11 +139,12 @@ body {
 }
 
 .modal-content{
-  background:white;
-  padding:30px;
-  width:400px;
-  margin:100px auto;
-  border-radius:8px;
+background:white;
+padding:30px;
+width:90%;
+max-width:400px;
+margin:100px auto;
+border-radius:8px;
 }
 
 .close{
@@ -179,4 +181,18 @@ body {
 .remove-btn{
   cursor:pointer;
   padding:5px;
+}
+
+/* responsive  */
+
+@media (max-width:600px){
+
+body{
+padding:20px;
+}
+
+.header{
+margin:20px 0;
+}
+
 }
